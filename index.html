@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassWord | Veryfying</title>
+    <link rel="icon" type="image/x-con" href="./download.jpg">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>PassWord Verification</h1>
+    </div>
+    <div class="entering">
+        <div class="header2">
+            Enter PassWord
+        </div>
+        <div class="details" >
+            <input type="password" placeholder="Enter PassWord" id="inp-val" size="60">
+        </div>
+        <div class="boxes">
+            <input type="checkbox" id="len-check" readonly> Length Greater Than 8
+            <input type="checkbox" id="char-check" readonly> It has one upperCase Alphabet
+            <br>
+            <input type="checkbox" id="num-check" readonly> It has one Numeric Value
+            <input type="checkbox" id="spe-check" readonly> It has one Special Character
+        </div>
+        <div class="strength">
+            <input type="range" step="25" id="sten-check">
+            <p id="status"></p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
